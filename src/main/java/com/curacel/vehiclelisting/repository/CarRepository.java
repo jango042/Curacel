@@ -19,6 +19,6 @@ public interface CarRepository extends JpaRepository<Car, Long> {
 
     public List<Car> findByNameAndModelAndYearAndSoldTrue(String name, String model, String year);
 
-    public List<Car> findByNameAndModelAndYearAndSoldTrueAndDateSoldBetween(String name, String model, String year, LocalDate pm, LocalDate today);
+    //public List<Car> findByNameAndModelAndYearAndSoldTrueAndDateSoldBetween(String name, String model, String year, LocalDate pm, LocalDate today);
     public List<Car> findAllByNameAndModelAndYearAndSoldTrueAndDateSoldAfter(String name, String model, String year, LocalDate pm);
 }
